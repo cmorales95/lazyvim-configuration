@@ -20,6 +20,9 @@ return {
       filesystem = {
         filtered_items = {
           visible = false,
+          always_show = {
+            ".env",
+          },
           hide_dotfiles = false,
           hide_gitignore = false,
           hide_by_name = {
