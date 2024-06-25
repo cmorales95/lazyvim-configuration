@@ -22,6 +22,12 @@ return {
           visible = false,
           hide_dotfiles = false,
           hide_gitignore = false,
+          hide_by_name = {
+            ".git",
+            ".fleet",
+            ".idea",
+            ".DS_Store",
+          },
         },
       },
     })
