@@ -21,12 +21,35 @@ require("lazy").setup({
     { import = "lazyvim.plugins.extras.coding.copilot-chat" },
 
     -- lang
-    { import = "lazyvim.plugins.extras.lang.go" },
     { import = "lazyvim.plugins.extras.lang.docker" },
+    { import = "lazyvim.plugins.extras.lang.git" },
+    { import = "lazyvim.plugins.extras.lang.go" },
+    { import = "lazyvim.plugins.extras.lang.helm" },
+    { import = "lazyvim.plugins.extras.lang.java" },
+    { import = "lazyvim.plugins.extras.lang.json" },
+    { import = "lazyvim.plugins.extras.lang.kotlin" },
+    { import = "lazyvim.plugins.extras.lang.markdown" },
+    { import = "lazyvim.plugins.extras.lang.nushell" },
+    { import = "lazyvim.plugins.extras.lang.python" },
+    { import = "lazyvim.plugins.extras.lang.rust" },
+    { import = "lazyvim.plugins.extras.lang.sql" },
+    { import = "lazyvim.plugins.extras.lang.toml" },
+    { import = "lazyvim.plugins.extras.lang.terraform" },
+    { import = "lazyvim.plugins.extras.lang.typescript" },
     { import = "lazyvim.plugins.extras.lang.yaml" },
+
+    -- deubg
+    { import = "lazyvim.plugins.extras.dap.core" },
+    { import = "lazyvim.plugins.extras.dap.nlua" },
 
     -- test
     { import = "lazyvim.plugins.extras.test.core" },
+
+    -- refactor
+    { import = "lazyvim.plugins.extras.editor.refactoring" },
+
+    -- dotfiles
+    { import = "lazyvim.plugins.extras.util.dot" },
 
     -- import/override with your plugins
     { import = "plugins" },
@@ -55,16 +78,6 @@ require("lazy").setup({
         "tutor",
         "zipPlugin",
       },
-    },
-  },
-})
-
-require("neo-tree").setup({
-  filesystem = {
-    filtered_items = {
-      visible = false,
-      hide_dotfiles = false,
-      hide_gitignore = false,
     },
   },
 })
